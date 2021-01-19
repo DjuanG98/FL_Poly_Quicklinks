@@ -79,11 +79,13 @@ public class Webview_Activity extends AppCompatActivity {
             if (url.equals("https://cams.floridapoly.org/student/login.asp")){
                 String remove = "@floridapoly.edu";
                 String user2 = user1.replaceAll(remove, "");
-                view.loadUrl("javascript:(function() { document.getElementById('txtUsername').value = '" + user2 + "';document.getElementById('txtPassword').value='" + pwd + "'; ;})()");
+                view.loadUrl("javascript:(function() { document.getElementById('txtUsername').value = '" + user2 + "'" +
+                        ";document.getElementById('txtPassword').value='" + pwd + "'; ;})()");
                 view.loadUrl("javascript:(function() { var z = document.getElementById('btnLogin').click(); })()");
             }
             else {
-                view.loadUrl("javascript:(function() { document.getElementById('userNameInput').value = '" + user + "';document.getElementById('passwordInput').value='" + pwd + "'; ;})()");
+                view.loadUrl("javascript:(function() { document.getElementById('userNameInput').value = '" + user + "'" +
+                        ";document.getElementById('passwordInput').value='" + pwd + "'; ;})()");
                 System.out.println("AUTOFILL");
                 view.loadUrl("javascript:(function() { var z = document.getElementById('submitButton').click(); })()");
             }

@@ -12,8 +12,6 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.maddtech.flpolyquicklinks.R;
-
 public class Profile_Activity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
